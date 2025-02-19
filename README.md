@@ -12,21 +12,15 @@
 
 ### 個体数
 
-```math
-R(t + \Delta t) - R(t) = (B_r - D_r)R(t)\Delta t \\
-F(t + \Delta t) - F(t) = (B_f - D_f)F(t)\Delta t 
-```
+- $R(t + \Delta t) - R(t) = (B_r - D_r)R(t)\Delta t$
+- $F(t + \Delta t) - F(t) = (B_f - D_f)F(t)\Delta t$
 
 ### 死亡率と個体数に関する仮定
 
-```math
-D_r = aF(t)  \\
-B_f = bR(t) 
-```
+- $D_r = aF(t)$
+- $B_f = bR(t)$
 
 ### シミュレーションの数理モデル
 
-```math
-R(t + \Delta t) = (1 + (B_r - aF(t)) \Delta t)R(t) \\
-F(t + \Delta t) = (1 + (bR(t) - D_f) \Delta t)F(t) 
-```
+- $R(t + \Delta t) = (1 + (B_r - aF(t)) \Delta t)R(t)$
+- $F(t + \Delta t) = (1 + (bR(t) - D_f) \Delta t)F(t)$
