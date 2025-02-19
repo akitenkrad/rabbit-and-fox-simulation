@@ -8,7 +8,19 @@
 - $B_f$: キツネの出生率
 - $D_f$: キツネの死亡率
 
+## 個体数のモデル化
+
 ```math
-R(t + \delta t) - R(t) = (B_r - D_r)R(t)\delta t
-F(t + \delta t) - F(t) = (B_f - D_f)F(t)\delta t 
+R(t + \Delta t) - R(t) = (B_r - D_r)R(t)\Delta t 
+F(t + \Delta t) - F(t) = (B_f - D_f)F(t)\Delta t 
+```
+
+```math
+D_r = aF(t) 
+B_f = bR(t) 
+```
+
+```math
+R(t + \Delta t) = (1 + (B_r - aF(t)) \Delta t)R(t) 
+F(t + \Delta t) = (1 + (bR(t) - D_f) \Delta t)F(t) 
 ```
