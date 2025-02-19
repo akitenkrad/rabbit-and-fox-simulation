@@ -1,0 +1,8 @@
+[package]
+name = "rabbit_and_fox"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.95"
+charming = { version = "0.4.0", features = ["ssr"] }
